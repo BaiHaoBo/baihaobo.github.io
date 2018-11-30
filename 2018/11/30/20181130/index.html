@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="模块创建模块时注意  模块名要遵循Python变量命名规范，不要使用中文、特殊字符 模块名不要和系统模块名冲突，最好先查看系统是否已存在该模块，检查方法是在Python交互环境执行import abc，若成功则说明系统存在此模块  在模块中写入12if __name__==&amp;apos;__main__&amp;apos;:    test() 在命令行运行模块时，变量__name__会置为__mian__">
+  <meta name="description" content="模块创建模块时注意  模块名要遵循Python变量命名规范，不要使用中文、特殊字符 模块名不要和系统模块名冲突，最好先查看系统是否已存在该模块，检查方法是在Python交互环境执行import abc，若成功则说明系统存在此模块">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python 学习 （5）——模块">
 <meta property="og:url" content="http://yoursite.com/2018/11/30/20181130/index.html">
 <meta property="og:site_name" content="真相大白">
-<meta property="og:description" content="模块创建模块时注意  模块名要遵循Python变量命名规范，不要使用中文、特殊字符 模块名不要和系统模块名冲突，最好先查看系统是否已存在该模块，检查方法是在Python交互环境执行import abc，若成功则说明系统存在此模块  在模块中写入12if __name__==&amp;apos;__main__&amp;apos;:    test() 在命令行运行模块时，变量__name__会置为__mian__">
+<meta property="og:description" content="模块创建模块时注意  模块名要遵循Python变量命名规范，不要使用中文、特殊字符 模块名不要和系统模块名冲突，最好先查看系统是否已存在该模块，检查方法是在Python交互环境执行import abc，若成功则说明系统存在此模块">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-30T04:22:00.990Z">
+<meta property="og:updated_time" content="2018-11-30T04:26:02.237Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python 学习 （5）——模块">
-<meta name="twitter:description" content="模块创建模块时注意  模块名要遵循Python变量命名规范，不要使用中文、特殊字符 模块名不要和系统模块名冲突，最好先查看系统是否已存在该模块，检查方法是在Python交互环境执行import abc，若成功则说明系统存在此模块  在模块中写入12if __name__==&amp;apos;__main__&amp;apos;:    test() 在命令行运行模块时，变量__name__会置为__mian__">
+<meta name="twitter:description" content="模块创建模块时注意  模块名要遵循Python变量命名规范，不要使用中文、特殊字符 模块名不要和系统模块名冲突，最好先查看系统是否已存在该模块，检查方法是在Python交互环境执行import abc，若成功则说明系统存在此模块">
 
 
 
@@ -364,7 +364,7 @@
                 
               
 
-              <time title="Created: 2018-11-30 11:33:20 / Modified: 12:22:00" itemprop="dateCreated datePublished" datetime="2018-11-30T11:33:20+08:00">2018-11-30</time>
+              <time title="Created: 2018-11-30 11:33:20 / Modified: 12:26:02" itemprop="dateCreated datePublished" datetime="2018-11-30T11:33:20+08:00">2018-11-30</time>
             
 
             
@@ -423,9 +423,10 @@
         <h1 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h1><p>创建模块时注意</p>
 <ul>
 <li>模块名要遵循Python变量命名规范，不要使用中文、特殊字符</li>
-<li>模块名不要和系统模块名冲突，最好先查看系统是否已存在该模块，检查方法是在Python交互环境执行<code>import abc</code>，若成功则说明系统存在此模块</li>
+<li>模块名不要和系统模块名冲突，最好先查看系统是否已存在该模块，检查方法是在Python交互环境执行<code>import abc</code>，若成功则说明系统存在此模块<a id="more"></a>
+在模块中写入<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if __name__==&apos;__main__&apos;:</span><br><span class="line">    test()</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<p>在模块中写入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">if __name__==&apos;__main__&apos;:</span><br><span class="line">    test()</span><br></pre></td></tr></table></figure></p>
 <p>在命令行运行模块时，变量<code>__name__</code>会置为<code>__mian__</code>。通过这个判断，可以使命令行运行时多执行一些代码，可以用来运行测试</p>
 <h2 id="使用模块"><a href="#使用模块" class="headerlink" title="使用模块"></a>使用模块</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import sys</span><br></pre></td></tr></table></figure>
 <h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><p>模块内的函数分为可供外部调用和仅在内部调用，通过前缀<code>_</code>区分</p>
@@ -481,6 +482,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/30/20181130-1/" rel="prev" title="python 学习 （6）——面向对象编程">
+                python 学习 （6）——面向对象编程 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -550,7 +555,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
