@@ -17,19 +17,6 @@
 <html class="theme-next muse use-motion" lang="">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误');
-                history.back();
-            }
-        }
-    })();
-</script>
-
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -121,20 +108,18 @@
 
 
 
-  <meta name="description" content="个人私货，不予显示">
+  <meta name="description" content="The article has been encrypted, please enter your password to view.">
 <meta name="keywords" content="nothing">
 <meta property="og:type" content="article">
 <meta property="og:title" content="20181117">
 <meta property="og:url" content="http://yoursite.com/2018/11/17/20181117-1/index.html">
 <meta property="og:site_name" content="真相大白">
-<meta property="og:description" content="个人私货，不予显示">
+<meta property="og:description" content="The article has been encrypted, please enter your password to view.">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://image.cleveland.com/home/cleve-media/width600/img/plain_dealer_metro/photo/daniel-best-ce833ddb1e48ef9a.jpg">
-<meta property="og:updated_time" content="2018-12-01T11:23:31.354Z">
+<meta property="og:updated_time" content="2018-12-01T12:21:03.211Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="20181117">
-<meta name="twitter:description" content="个人私货，不予显示">
-<meta name="twitter:image" content="https://image.cleveland.com/home/cleve-media/width600/img/plain_dealer_metro/photo/daniel-best-ce833ddb1e48ef9a.jpg">
+<meta name="twitter:description" content="The article has been encrypted, please enter your password to view.">
 
 
 
@@ -396,7 +381,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-01 19:23:31" itemprop="dateModified" datetime="2018-12-01T19:23:31+08:00">2018-12-01</time>
+                <time title="Modified: 2018-12-01 20:21:03" itemprop="dateModified" datetime="2018-12-01T20:21:03+08:00">2018-12-01</time>
               
             
           </span>
@@ -447,10 +432,20 @@
       
 
       
-        <p>个人私货，不予显示<br><a id="more"></a><br>Suicide of Daniel Best</p>
-<p>Daniel Best，美国 Department of Health and Human Services 官员，致力于降低药物价格。11月1日，因“多处钝击伤害”死亡，被认定为自杀。</p>
-<p><a href="https://www.cleveland.com/metro/index.ssf/2018/11/death_of_hhs_official_daniel_b.html" target="_blank" rel="noopener">Death of HHS official Daniel Best is ruled a suicide</a><br><!--more--><br><img src="https://image.cleveland.com/home/cleve-media/width600/img/plain_dealer_metro/photo/daniel-best-ce833ddb1e48ef9a.jpg" alt="Daniel Best" title="Deniel Best"></p>
-
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="Please enter the password to read the blog.">
+    <label for="pass">Please enter the password to read the blog.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+U2FsdGVkX19fOfrgrp5ZxTeRNpB+70Tc2zEmf8l5wLgifmY3UrdpH7BfN1T+tDI09X3NUXd1FZAjnH3YjxNUx2YO94YuzrfdwR8MgL1+RkMUlbUNJMiVGvO8PnHrbcw+Riz2ryJ1nwSNUBRDuFkUzOob/YY+MInH7yP5NCrruLhkSLHFS6Ru6zvrH1lgy22NmNR2jV7soelelQDEk+toSO9aY/IJpQgfbsrRb80qZn5OhrjRtZtdev6a0W2X1imkqLPm3nb06/9RszAO0OfTUeeENon7wFflaGbIm8d6mHy6pnE1ifDEKIY1RZ8x22OQz8muVEUjZB26kwmYLoHk0vDiFpk3+BAE56dZE8X74EElqH9snGFqlyAXhV+nONdOLMf2UCm1sB81YvbVASnfiHHbMsJrTbcjCvsD+KzwLwAgsB9rLBn3TXM0CCOv0PeLslSkEqDsSYejgXj4PhcBh5a8A95IgV4UV7l52LASF76ZOlEzNqRWH2GTxoB6WN8AtIVK0t443Zi1AHymhrl44AOsJKQVrxQr6B/FMtWhn+RA+izF7rRCO6uYTOD6Lu3lUq5nvc1uBLQ4COgh6CYar9hXL7xf1AkgO4iMJ/C1meIR7dHlHrU5y5cDpLGebU/M2UfZki2nUW+dEumC7QGEXEwlroDrQrsvgvgGXaYQyOe1kOI/8nrGQPKM/wq3fXfx4CXg+PKVuJ6GsfwAIeslzqrv1Shx1Q6lDywp9Huv7JiooM8ONjYsDTa46x+MYc/TtecWlcdVzM7OlTLj0P7O+PImT37xz1U9Vi6P2olbplU1HDAlbOAyQxIJrVCcP/kyejn02QMLUn3k5jfJ/Yb9Y4vc7GYo0vCERsWOJW6Nz+de059yEvMvvV5WvJ80Loo6apUgNoho+kNb68xhl8nOa9ZmtCVC6FC+Uo21ME0jiuRGt7e577w9AgxUFqrwL5V7qS4+9EAquIB3rELmgGYrX3x5lobklkg9zEKDWTvHyCKsZL4J5/KkcGm5Zs/Ux72vBAI3Gnm1FDZc8zyG6Vs/mR0O3dufxyEs/x216MuFY0lZtxxqZgr/Z4BiXOkGsdAbPOPCO5ZO2Y4/rU7QCnQense9rGfC9rGoPu5zphR70j5ZiwjjdFwaKa5K0BkOoI0sk9UJZpbi0nZbPQxY/L35kzbU1+mWZn557//u/nGQQvMUY0F8bqhQPK4G9PASVQ4iuEaNGJ+cTq6LrOWGG8hCFk1PVR0kB/liGzpyutYHT12/5dvMBr1IQCU3aK5USCjVwDNs0TuZFM9n1h+2Xr3CMJ1gIZlTOsFEY+/EQiZuhqbPe7eQ3aAzNEzv5yn4xsn+8+MtQFlwcX1/toYXcai9o3E7rTZ4CBAU8zcAObnskbhgr/AfcXvkO9EVzp/zDkH0f/aTYoRC/9o2/URmkoyo0pTpGsqGwEigvdGdQv2b1bixeHfxTzz4oc5MD+AgMd6ITN+S3TU7rzWZbo0GabloURkJD6Ljux0noiWGHIDbCcgmFeG6/nvYL/LSMw2VoE+jLF6A9JoTKn2cgVqP/lvK+nQ1NIoMe4H+GzeHnJuoFPnP4S/H20csSVnK2xnvXNAq5GqgQU3TfISz4ExARkbVuIRjT7GlA+DInCH3KrY9OAs4kc8dWbj/n2llG13/Up0CkMfw5rRKWiArgon0GPNKY+Ft2KsOilYmz1NwXdwDGg2TOdpwBMkVj+j+u3pMLiVl
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
     </div>
 

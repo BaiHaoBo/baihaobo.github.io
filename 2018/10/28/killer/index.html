@@ -17,19 +17,6 @@
 <html class="theme-next muse use-motion" lang="">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误');
-                history.back();
-            }
-        }
-    })();
-</script>
-
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -121,17 +108,17 @@
 
 
 
-  <meta name="description" content="个人私货，不予显示">
+  <meta name="description" content="The article has been encrypted, please enter your password to view.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="20181028">
 <meta property="og:url" content="http://yoursite.com/2018/10/28/killer/index.html">
 <meta property="og:site_name" content="真相大白">
-<meta property="og:description" content="个人私货，不予显示">
+<meta property="og:description" content="The article has been encrypted, please enter your password to view.">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-12-01T11:16:18.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="20181028">
-<meta name="twitter:description" content="个人私货，不予显示">
+<meta name="twitter:description" content="The article has been encrypted, please enter your password to view.">
 
 
 
@@ -444,9 +431,20 @@
       
 
       
-        <p>个人私货，不予显示<br> <a id="more"></a><br>我是一个没有感情的杀手</p>
-<p>昨天看了一些周星驰的电影，里边有一些感情戏。看见那些人略显亲密，心里就有些难受。我要做一个没有感情的杀手，不为这些东西所触动，同时还要感受生活中其他能让人想要活下去的事情。<br>要沉浸在没有感情的科研世界里，不再认为亲密关系是一个必要的东西，这样就不会再产生想要追寻的想法。</p>
-
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="Please enter the password to read the blog.">
+    <label for="pass">Please enter the password to read the blog.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+U2FsdGVkX184oYoqUJdvV+uKYhSjngNMSU6O6Tic7e3IvKRydLWlzlT3EDh1wY4MuyniSFGN06YvUWeyggAYsBJgg9L8gl3g0s1NHVKDEXgd90LqbaOISh9TexE9kC31NZgp8AUf6qe8g2n/DMw1NyWWRH8svgRu8OnrTt0AeGpfoNZQL7hoydAsEln3ejpADX/beYX9PtlRfKGNdm7l5DXjVSmOkyA9SY+6SdWrNdh9BVkr6up/l5ZbXJhm/AQx631MI7iBUlT1tj/rmt/nZjhBHR87i4boOzOVvcrYcyLqyOgN5T6p6M4cWiN57urXmkyIZzlxulzrgR7tE6ntp96aZ6Vz2vRdXuCz4l5zgOPxreRXXiTdlvOjBV0bBzzo54hBIbhBlILgQSyo00DJZd1Ngwx5tcRl1AgQqfsAhQ5QEC7VYEKCQhHeJu3wXRd6aadCiqzlkYmXedEr7DPNsgymY8aL8LKsViDvjdF3PojKubFIi9WYySJmKkFiBOh2l6pnQ+2u2GzAGckwyoWTdfYzabZPPFp9cjUZrk13WuxUA5q/K0UrAf17kBv5Arv1lIUEp/lwP1zmu6nL5lXjSVm7ox7d9yW4GLDIyFdRPDmnDmnz/DqzJJIUM+kee3f8QiyqZdy0/NtmwclUKjiZps6yOa0oteRW99xQhB3z1XOQXcIjxPfSChDXTclarhL1LNf7ILD4fT5Ktsjzll+6QL5ktByZ/BKeM+8aAL3E7ajG0bGEN8Kp+War67C4YHBvCO3iSeXl9Rin/Oh58P69o5AuG7YoomXgcW5BvukCptKbf1x0pVC11urASCj08PHnS6alri5Nt5zYOUk79qA4HKxJn+UoySqyD4FLgZmz+aAptp0EgukeiXHwO/fcvENHjQqiC/dtTBL1Uue1NY6/HDaYyJQ6QB8kANi9m3lViMcmMCrd42FIXdknzvrcRz545piGzECPhVCrypROkPXDNYzV/lot5UbVpP+hKpt5+B5qy2aAbgYZ99SMhvktqT7yEkpHQjxTecYKAjofnAG8wcuadWOYQvHuI/a1TOPiqNJKcSi3TOgH5qh6X+eKyZo9DQbXQH0brkG6Oe+53G0ZFuqEtd8Ty+g2uyi9/xbgIn6f+yeFjwXLsXpruF5Ot2AwVaLzrAW1OQt2p8JUA0cvRrVaa2v2zj6eFM5Hfqn/nzqC5FYJnw++JCUALHLCbqhnBrEZ5Vwi1nEWV/Ocz1VW4ER0k5125/WNj4lZZQDgI8lucgayobNd4Mgi3AI91j+t+SewgkFfXmN/P5JiWWAKgBkf3AV2q6J+U1Vvr1qHNKvdUmuWdpgzRvRfRm48OyO7ynpqiQg6UeiW1SzAWxDb9Zl/B9UipBUkfg3dti6sLyhjJjDOc1ZMwBAHw30wxveMQh6AbQFw/iOPlpQWY3ZHqUbZTmbgUo0/7IYoaulBHb+OTuxRfVAf263FL9heeSJJFtnJQZvqeAFCJ6K6G4HoYYimSlk2CsibxLc34CQ0ypov9QP6UmZI4gBG05jh8pNm6fjC0XeuOOyHxf5+cp4xYwSk+yQfhiRUN/oUhHMhyNY0KkCuGF3sStO5HMGWlmTXJJIYrTkAd3V45ueig8VHjLyD6/0iLUKeLMjhfIEcY8cVFVwJJjCPwXNRmxi2T1DOm9s/BmhAPyKb05JawZOLsC8jiLD0/ODXerQ2qvHOXXV+8r6jTtLvzeBoH71mKrOnf0aNomDHgL7vCfT3ubnMAquta3yygEagnN28HhiUiYf6ltU6XDC4Dh9S/kAUjV1SqNpC6cDZq+nyDyFDcMW6c4JAQUfGMn8arlaTdjcUqO1pncHFzB0xM4odczm8+Hr2
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
     </div>
 

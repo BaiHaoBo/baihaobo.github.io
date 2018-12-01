@@ -17,19 +17,6 @@
 <html class="theme-next muse use-motion" lang="">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误');
-                history.back();
-            }
-        }
-    })();
-</script>
-
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -121,17 +108,17 @@
 
 
 
-  <meta name="description" content="个人私货，不予显示">
+  <meta name="description" content="The article has been encrypted, please enter your password to view.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="20181105">
 <meta property="og:url" content="http://yoursite.com/2018/11/05/20181105/index.html">
 <meta property="og:site_name" content="真相大白">
-<meta property="og:description" content="个人私货，不予显示">
+<meta property="og:description" content="The article has been encrypted, please enter your password to view.">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2018-12-01T11:20:09.874Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="20181105">
-<meta name="twitter:description" content="个人私货，不予显示">
+<meta name="twitter:description" content="The article has been encrypted, please enter your password to view.">
 
 
 
@@ -444,11 +431,20 @@
       
 
       
-        <p>个人私货，不予显示<br><a id="more"></a></p>
-<hr>
-<p>我在会议现场见他倒下，见老师叫救护车，领救护车来现场，随救护车到医院急救室，并眼睁睁的看着抢救无效去世。64岁，感觉还是很年轻。原来还抱着一点点幻想，现在也完全破灭了。<br>是我第一个亲眼看见一个活生生的人，完全看不出任何问题的人，突然之间就倒下，突然之间就死亡。呻吟，蹬腿，挣扎，简直是一场恶梦。<br>才明白现实的残酷，生命的脆弱。是电影，电视，小说，网络等等都无法带给我的。几乎是初识王老师，作为一个X射线专家，却给我上了这么一堂课。</p>
-<p>我要积极地关注现实，把所有注意力放在现实中来。而不是其他虚拟的或者虚幻的东西。</p>
-
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="hbe-security">
+  <div class="hbe-input-container">
+  <input type="password" class="hbe-form-control" id="pass" placeholder="Please enter the password to read the blog.">
+    <label for="pass">Please enter the password to read the blog.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
     </div>
 
