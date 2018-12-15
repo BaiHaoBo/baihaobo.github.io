@@ -108,20 +108,24 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="真相大白">
-<meta property="og:url" content="http://yoursite.com/tags/Manjaro/index.html">
+  <meta name="description" content="linux 下U盘启动盘制作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux U盘操作">
+<meta property="og:url" content="http://yoursite.com/2018/12/15/20181215 usb flash disk operation/index.html">
 <meta property="og:site_name" content="真相大白">
+<meta property="og:description" content="linux 下U盘启动盘制作">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-15T15:50:16.092Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="真相大白">
+<meta name="twitter:title" content="linux U盘操作">
+<meta name="twitter:description" content="linux 下U盘启动盘制作">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/Manjaro/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/15/20181215 usb flash disk operation/">
 
 
 
@@ -131,7 +135,7 @@
   };
 </script>
 
-  <title>Tag: Manjaro | 真相大白</title>
+  <title>linux U盘操作 | 真相大白</title>
   
 
 
@@ -180,7 +184,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -277,22 +281,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -317,56 +305,210 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Manjaro<small>Tag</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
+
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/15/20181215 usb flash disk operation/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="真相大白">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/12/04/20181204 Gradio/" itemprop="url">
-              
-                <span itemprop="name">Gradio 安装</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">linux U盘操作
+              
+            
+          </h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-04T12:07:54+08:00" content="2018-12-04">
-          12-04
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
 
-    </header>
-  </article>
+            
+            
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-12-15 00:00:00 / Modified: 23:50:16" itemprop="dateCreated datePublished" datetime="2018-12-15T00:00:00+08:00">2018-12-15</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>linux 下U盘启动盘制作<br><a id="more"></a></p>
+<ol>
+<li>查看U盘设备号<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ sudo fdisk -l</span><br><span class="line"></span><br><span class="line">Disk /dev/sda：111.8 GiB，120034123776 字节，234441648 个扇区</span><br><span class="line">Disk /dev/sdb：465.8 GiB，500107862016 字节，976773168 个扇区</span><br><span class="line">Disk /dev/sdc：7.5 GiB，8011120640 字节，15646720 个扇区</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>或先用’df’命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ df</span><br><span class="line"></span><br><span class="line">文件系统        容量  已用  可用 已用% 挂载点</span><br><span class="line">dev             1.9G     0  1.9G    0% /dev</span><br><span class="line">run             2.0G  1.2M  1.9G    1% /run</span><br><span class="line">/dev/sda1       102G   27G   70G   29% /</span><br><span class="line">/dev/sdb1       234G  8.1G  226G    4% /run/media/usr/大文件</span><br><span class="line">/dev/sdc1       1.8G  1.8G     0  100% /run/media/usr/MJR17111</span><br></pre></td></tr></table></figure></p>
+<p>前边 <code>/dev/sdc1</code> 是文件系统名，后边<code>/run/media/usr/MJR17111</code>是挂载的位置。卸载要卸载挂载的位置</p>
+<ol start="2">
+<li><p>如果U盘被自动挂载，请使用U盘设备号先umount</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo umount /run/media/bhb/MJR17111</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>分区<br>用<code>fdisk</code>命令，按<code>m</code>显示帮助<br>分出<code>主分区1（/dev/sdc1）</code>并设置为启动分区</p>
+</li>
+</ol>
+<p>写完之后一定要用<code>w</code>命令保存</p>
+<ol start="4">
+<li><p>格式化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkfs -t ntfs /dev/sdc1</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用’dd’命令将iso文件写入U盘 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo dd if=~/ubuntu-16.04-desktop-amd64.iso of=/dev/sdc1</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>写入过程没有显示，等5-10分钟</p>
+<ol start="5">
+<li>写入引导<br>若写入的是linux的系统，不需要写引导，linux系统的iso中自己写有引导<br>如果写入windows的系统，需要加引导。需要一个工具LILO<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install lilo</span><br><span class="line">sudo lilo -M /dev/sdc mbr</span><br></pre></td></tr></table></figure></li>
+</ol>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/08/20181208 segmentation fault/" rel="next" title="segmentation fault">
+                <i class="fa fa-chevron-left"></i> segmentation fault
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -624,6 +766,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.5.0"></script>
+
+
 
   
 
